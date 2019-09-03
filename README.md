@@ -8,8 +8,6 @@ At the beginning of each cohort, update the versions in [`Gemfile`](Gemfile).
 
 ## Dependencies
 
-Install with `bundle install`.
-
 -   [`rails-api`](https://github.com/rails-api/rails-api)
 -   [`rails`](https://github.com/rails/rails)
 -   [`active_model_serializers`](https://github.com/rails-api/active_model_serializers)
@@ -32,6 +30,7 @@ Install with `bundle install`.
 
 ### Setup Environment:
 1.  Install dependencies with `bundle install`.
+      - If you get a nokogiri error run `gem install nokogiri -v '1.8.4'` then run `bundle config build.nokogiri --use-system-libraries && bundle install`
 1.  `git add` and `git commit` your changes.
 
 ### Setup your database:
